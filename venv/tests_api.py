@@ -1,11 +1,12 @@
 import allure
 import requests
 from urls_for_api import *
+from credentials import token
 
 headers = {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
-    'Authorization': 'OAuth y0_AgAAAABp9juuAAm2yAAAAADhD5kFNLZdroOhTYqOZCnIAL8_tQrFr1I',
+    'Authorization': token,
 }
 
 @allure.title('Создание папки, копирование в неё файла и переименование файла в папке')

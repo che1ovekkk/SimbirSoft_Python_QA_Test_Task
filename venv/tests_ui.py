@@ -5,6 +5,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from locators import *
+from credentials import login, password
 import allure
 
 
@@ -35,13 +36,13 @@ def test_copy_file():
 
         with allure.step('Ввод логина'):
             login_field = browser.find_element(By.NAME, login_loc)
-            login_field.send_keys('bms-simbirsoft')
+            login_field.send_keys(login)
             sign_in_button = browser.find_element(By.ID, sign_in_button_loc)
             sign_in_button.click()
 
         with allure.step('Ввод пароля'):
             passw_field = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.NAME, passw_field_loc)))
-            passw_field.send_keys('simbirsoft-bms-test')
+            passw_field.send_keys(password)
             sign_in_button = browser.find_element(By.ID, sign_in_button_loc)
             sign_in_button.click()
 
