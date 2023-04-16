@@ -8,7 +8,7 @@ headers = {
     'Authorization': 'OAuth y0_AgAAAABp9juuAAm2yAAAAADhD5kFNLZdroOhTYqOZCnIAL8_tQrFr1I',
 }
 
-@allure.title('Создание папки, копирвоание в неё файла и переименование файла в папке')
+@allure.title('Создание папки, копирование в неё файла и переименование файла в папке')
 def test_api():
     with allure.step('Создание папки'):
         create_folder = requests.put(url_to_create_folder, headers=headers)
