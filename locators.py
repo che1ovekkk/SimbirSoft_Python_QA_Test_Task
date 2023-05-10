@@ -2,6 +2,8 @@
 All locators here are announced as
 '<button_name>_loc'
 """
+
+# ya.ru - кнопки входа, логина, пароля и перехода в Диск
 sign_in_loc = 'Войти'
 change_to_email_loc = '[data-type="login]"'
 login_loc = 'login'
@@ -10,6 +12,8 @@ passw_field_loc = 'passwd'
 skip_button_loc = '[data-t="button:pseudo"]'
 avatar_button_loc = '[aria-label="Меню профиля, вход выполнен"]'
 disk_button_appear_loc = 'Диск'
+
+# disk.yandex.ru - создание папки, копирование файла в папку, выход из аккаунта
 create_button_loc = 'span > button'
 create_folder_button_loc = '[aria-label="Папку"]'
 folder_name_field_loc = '[text="Новая папка"]'
@@ -25,6 +29,8 @@ file_in_folder_loc = '[title="Файл для копирования.txt"]'
 folder_title_loc = '[title="Тестовая папка для задания"'
 avatar_in_disk_loc = '[aria-label="Аккаунт"]'
 logout_button_loc = '[aria-label="Выйти из аккаунта"]'
+
+# disk.yandex.ru - загрузка и открытие файла, проверка текста внутри файла, текст для сравнения
 is_folder_with_ast_saved_loc = '[title="Тестовая папка для задания со звёздочкой"]'
 folder_with_ast_loc = '[aria-label="Тестовая папка для задания со звёздочкой"]'
 upload_button_loc = '[type="file"]'
